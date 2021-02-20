@@ -16,7 +16,7 @@
 * @return {number[]}
 */
 var twoSum = function (nums, target) {
-    const hash = new Object(null)// 也可以使用数组代替。
+    const hash = Object.create(null)// 也可以使用数组代替。
     const len = nums.length
     for (let i = 0; i < len; i++) {
         const value = nums[i]
