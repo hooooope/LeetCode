@@ -11,6 +11,11 @@
  *  输出：false
  * 解释：从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
  */
+
+/**
+* @param {number} x
+* @return {boolean}
+*/
 var isPalindrome1 = function (x) {
     const s = x.toString()
     const mid = Math.floor(s.length / 2)
