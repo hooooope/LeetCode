@@ -43,18 +43,18 @@ var diagonalSum1 = function (mat) {
 
 // others wrote
 var diagonalSum2 = function (mat) {
-    let a = 0, b = mat.length - 1;
-    let num = 0;
+    let a = 0, b = mat.length - 1
+    let num = 0
     while (a <= b) {
         if (a == b) {
-            num += mat[a][a];
+            num += mat[a][a]
         } else {
-            num += mat[a][a] + mat[a][b] + mat[b][a] + mat[b][b];
+            num += mat[a][a] + mat[a][b] + mat[b][a] + mat[b][b]
         }
-        a++;
-        b--;
+        a++
+        b--
     }
-    return num;
-};
+    return num
+}
 
 // 以上两种写法的思路都是一样的，第二中写法比较精巧。
