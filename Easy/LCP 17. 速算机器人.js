@@ -19,7 +19,7 @@
  * @param {string} s
  * @return {number}
  */
-var calculate = function (s) {
+var calculate1 = function (s) {
     let x = 1, y = 0
     for (let i = 0; i < s.length; i++) {
         switch (s[i]) {
@@ -33,7 +33,7 @@ var calculate = function (s) {
     return x + y
 };
 
-var calculate = function (s) {
+var calculate2 = function (s) {
     return 1 << s.length
 };
 
